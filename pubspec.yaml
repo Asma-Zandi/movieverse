@@ -1,0 +1,46 @@
+name: movieverse
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  http: ^1.2.0
+  url_launcher: ^6.3.0
+  
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  android_intent_plus: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+flutter_launcher_icons:
+  image_path: "assets/ایکون.jpg" # آدرس عکس خودت
+  android: "launcher_icon"
+  ios: true
+  min_sdk_android: 21 # حداقل نسخه اندروید
+
+flutter_native_splash:
+  color: "#000000" # رنگ پس‌زمینه صفحه بارگذاری (مثلا مشکی)
+  image: "assets/ایکون.jpg" # عکسی که می‌خواهی وسط صفحه لودینگ نمایش داده شود
+
+  # برای اندروید ۱۲ به بالا (که این کادر سفید را نسازد)
+  android_12:
+    color: "#000000"
+    image: "assets/ایکون.jpg"
